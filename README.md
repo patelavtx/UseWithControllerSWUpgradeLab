@@ -3,8 +3,11 @@
 ### Description
 
 azspoke-dev185-weu  :   use downloaded module to set sw and image parameters by referencing transit gateway locally sourced module.
+
 aztransitfnet184-weu:   references local sourced module to deploy which has the sw and image paramters added
-                        -  'resource.tf.orig'  ->  rename to leverage the controller configuration for sw upgrade and also gw management  (Run after gateways have been deployed)
+
+**  'resource.tf.orig'  ->  rename to leverage the controller configuration for sw upgrade and also gw management  (Run after gateways have been deployed) **
+
 ./local_taf-testswupgrade:   locally sourced 'mc-transit' module updated to accommodate sw and image parameters and used by 'aztransitfnet184-weu
 
 
