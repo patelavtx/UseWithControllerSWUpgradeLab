@@ -1,0 +1,12 @@
+
+# Create an Aviatrix Controller Config with Controller Upgrade of Gateways
+# Added here for convenience - 
+# BUT do not run along side or initial mc-transit run (causes issues on transit deployment)
+
+resource "aviatrix_controller_config" "test_controller_config" {
+  http_access             = true
+  #fqdn_exception_rule     = false
+  enable_vpc_dns_server = true                                          # seems to be true and this resource block sets to false by def; setting to true
+  #target_version          = "7.0"
+  manage_gateway_upgrades = false
+}
